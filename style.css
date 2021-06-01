@@ -1,0 +1,25 @@
+#title{
+    background-color:  #2980b9;
+    border: 3px solid black;
+    margin: 30px auto;
+    width: 400px;
+    padding: 5px auto;
+    text-align: center;
+}
+body{
+	background: #ddbea9;
+}
+.name{
+    background: #2980b9;;
+    font-size: 30px;
+    position: sticky;
+    top: -1px;
+}
+li{
+    font-size: 1.25rem;
+}
+li::before{
+    content:'\2706';
+    color: #e74c3c;
+
+}
