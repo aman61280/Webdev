@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+ul{
+    position: absolute;
+    display: inline;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0;
+
+}
+.brand{
+    margin-left: 70px;
+    margin-right: 150px;
+}
+
+.nav .brand img{
+    width: 180px;
+}
+
+.nav ul li{
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 120px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #740785;
+    width: 100%;
+    height: 85vh;
+    z-index: -1;
+}
+
+.bg .glass{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+}
+.bg .choc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+}
+.bg .content{
+    position: absolute;
+    top: 250px;
+    right: 150px;
+    width: 38%;
+}
+.content h1{
+    color: #e59404;
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 0.07em;
+    margin-bottom: 30px;
+}
+.content a{
+    text-decoration: none;
+    color: #e59404;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 3px solid #e59404;
+    border-radius: 30px;
+    transition: 0.5s linear all;
+}
+
+.content a:hover{
+    background-color: #e59404;
+    color: #fff;
+}
+footer{
+    position: absolute;
+    top: 85vh;
+    width: 100%;
+    height: 15vh;
+}
+footer .side{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #2a0a49;
+}
+footer ul{
+    color: #2a0a49;
+    top: 30px;
+    right: 40px;
+}
+footer ul li{
+    font-size: 32px;
+    margin-right: 20px;
+    transition: .5s linear all;
+}
+
+footer ul li:hover{
+    color: #472383;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
