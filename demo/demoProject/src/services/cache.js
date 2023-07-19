@@ -14,16 +14,9 @@ const cacheService = {
   isBlocked: (key) => client.get(key),
   trackRequestCount: (from) => {
     const key = `request_count:${from}`;
-    return new Promise((resolve, reject) => {
-      client.incr(key, (err, count) => {
-        if (err) {
-          reject(err);
-        } else {
+    return client.incr(key, (err, count) => {
           client.expire(key, 24 * 60 * 60); // 24 hours expiration
-          resolve(count);
-        }
-      });
-    });
+        })
   },
 };
 

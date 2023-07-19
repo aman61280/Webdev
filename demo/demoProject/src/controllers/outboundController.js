@@ -1,6 +1,7 @@
 // outboundController.js
 const cacheService = require('../services/cache');
 const phoneNumberModel = require('../models/phoneNumber');
+const authenticationService = require('../services/authentication')
 
 const outboundController = {
   handleOutboundSMS: async (req, res) => {
@@ -27,7 +28,7 @@ const outboundController = {
     const decodedCredentials = Buffer.from(encodedCredentials, 'base64').toString('utf-8');
     const [username, password] = decodedCredentials.split(':');
 
-    if (!authenticationService.isValidCredentials(username, password)) {
+    if (!authenticationService.validateCredentials(username, password)) {
       return res.status(403).json({ message: '', error: 'Forbidden' });
     }
 
